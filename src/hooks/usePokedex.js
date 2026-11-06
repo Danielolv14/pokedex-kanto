@@ -229,7 +229,8 @@ export default function usePokedex(layout) {
     setPainel(null);
     setAbaMobile(false);
     bip('tecla');
-    requestAnimationFrame(() => buscaRef.current?.focus());
+    if (abaMobile) requestAnimationFrame(() => buscaRef.current?.focus());
+    else buscaRef.current?.focus();
   };
 
   const alternarPainel = (qual) => {
