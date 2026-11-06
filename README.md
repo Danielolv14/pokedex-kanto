@@ -12,10 +12,9 @@ Dentro das telas fica a parte "site": lista com busca, filtro, ordenação, deta
 
 ![Modo treinadores no tema escuro](docs/capturas/desktop-treinadores-escuro.webp)
 
-## Dupla
+## Autor
 
-- Daniel Oliveira de Menezes
-- _(segundo integrante)_
+Daniel Oliveira de Menezes ([@Danielolv14](https://github.com/Danielolv14)), trabalho feito individualmente.
 
 ## Como rodar
 
