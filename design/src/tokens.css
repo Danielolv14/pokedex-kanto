@@ -1,0 +1,125 @@
+:root {
+  /* carcaça */
+  --shell: #dc0a2d;
+  --shell-light: #f44a63;
+  --shell-dark: #a3001f;
+  --shell-deep: #6e0015;
+  --shell-ink: #5a0012;
+
+  /* lente e LEDs */
+  --lens: #2f8cff;
+  --lens-light: #9fe0ff;
+  --lens-dark: #0b4fa8;
+  --lens-rim: #0e3a78;
+  --lens-ring: #f4f6f8;
+  --led-red: #ff3b3b;
+  --led-yellow: #ffd23f;
+  --led-green: #3ddc6a;
+  --led-off: #4a1820;
+
+  /* moldura da tela */
+  --bezel: #dedede;
+  --bezel-light: #f7f7f7;
+  --bezel-dark: #a9a9a9;
+
+  /* tela principal (LCD) */
+  --lcd: #c4e3c2;
+  --lcd-2: #b0d4ae;
+  --lcd-hi: #e4f4e1;
+  --lcd-ink: #13311f;
+  --lcd-dim: #4e7a5b;
+
+  /* tela secundária */
+  --screen: #121c16;
+  --screen-2: #1c2b22;
+  --screen-line: #26382d;
+  --phosphor: #8cffb0;
+  --phosphor-dim: #57a876;
+  --accent: #ffd23f;
+
+  /* botões */
+  --key: #2e7bd6;
+  --key-light: #5fa2ee;
+  --key-dark: #174c8f;
+  --pad: #22262b;
+  --pad-light: #3b4148;
+  --pill-red: #e3354f;
+  --pill-blue: #3477d9;
+  --display: #5bc46b;
+  --display-ink: #123b1a;
+  --badge: #f2c14e;
+
+  /* fundo da página */
+  --bg: #e6e9ef;
+  --bg-2: #cfd5df;
+  --text: #1b2130;
+  --text-dim: #5d6678;
+
+  /* status (barras) */
+  --stat-hp: #ff5959;
+  --stat-attack: #f5ac78;
+  --stat-defense: #fae078;
+  --stat-sp-attack: #9db7f5;
+  --stat-sp-defense: #a7db8d;
+  --stat-speed: #fa92b2;
+
+  /* tipos (paleta oficial) */
+  --type-typeless: #68a090;
+  --type-normal: #a8a878;
+  --type-fire: #f08030;
+  --type-water: #6890f0;
+  --type-grass: #78c850;
+  --type-electric: #f8d030;
+  --type-ice: #98d8d8;
+  --type-fighting: #c03028;
+  --type-poison: #a040a0;
+  --type-ground: #e0c068;
+  --type-flying: #a890f0;
+  --type-psychic: #f85888;
+  --type-bug: #a8b820;
+  --type-rock: #b8a038;
+  --type-ghost: #705898;
+  --type-dark: #705848;
+  --type-dragon: #7038f8;
+  --type-steel: #b8b8d0;
+
+  /* tipografia */
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-lcd: 'VT323', monospace;
+  --font-ui: 'Inter', system-ui, sans-serif;
+
+  /* espaçamento */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* raios */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* sombras */
+  --shadow-device: 0 30px 60px rgba(20, 10, 15, 0.35);
+  --shadow-key: 0 3px 0 #123c70;
+  --shadow-lcd: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+  --shadow-bevel: inset 0 2px 0 rgba(255, 255, 255, 0.35), inset 0 -3px 0 rgba(0, 0, 0, 0.25);
+}
+
+[data-theme='escuro'] {
+  --bg: #10131a;
+  --bg-2: #1b2130;
+  --text: #e9edf5;
+  --text-dim: #9aa3b5;
+  --lcd: #0f1f17;
+  --lcd-2: #16291f;
+  --lcd-hi: #1d3428;
+  --lcd-ink: #8cffb0;
+  --lcd-dim: #4f9a6c;
+}

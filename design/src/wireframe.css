@@ -1,0 +1,74 @@
+/* Low-fi: mesma estrutura do hi-fi, sem cor, sombra nem fonte pixel. */
+.wf, .wf * { font-family: 'Inter', sans-serif !important; box-shadow: none !important; }
+.wf.screen { background: #f4f4f4 !important; }
+.wf .floor-shadow, .wf .lens i, .wf .key-led, .wf .led::after, .wf .round-btn::after, .wf .lcd::after, .wf .screen2::after,
+.wf .green-display::after, .wf .mini-display::after { display: none !important; }
+.wf .device, .wf .hinge, .wf .key svg, .wf .switch-label svg, .wf .cover-hint svg { filter: none !important; }
+.wf .key-well, .wf .pill-well, .wf .round-well, .wf .dpad-well { background: #f0f0f0 !important; border: 1px dashed #b0b0b0; }
+.wf .switch-track { background: #ffffff !important; border: 1.5px solid #8a8a8a; }
+.wf .switch-knob { background: #dcdcdc !important; border-color: #8a8a8a !important; }
+.wf .switch-label, .wf .switch-legend, .wf .kbd-hint { color: #555555 !important; text-shadow: none !important; }
+.wf .kbd-hint kbd { background: #ffffff !important; border-color: #8a8a8a !important; }
+.wf .brand-name { color: #333333 !important; font-size: 18px !important; font-weight: 800; }
+
+.wf .lens-ring, .wf .lens-bezel, .wf .lens, .wf .led, .wf .bezel-dot, .wf .bezel-btn, .wf .round-btn, .wf .pill, .wf .white-bar,
+.wf .hinge i {
+  background: #ffffff !important; border: 1.5px solid #8a8a8a !important;
+}
+.wf .speaker i { background: #9a9a9a !important; }
+.wf .engraved, .wf .ctrl-label { text-shadow: none !important; color: #6a6a6a !important; font-size: 10px !important; font-weight: 700 !important; }
+.wf .engraved { font-size: 13px !important; }
+.wf .cover-hint b, .wf .cover-hint span { color: #555555 !important; text-shadow: none !important; }
+
+.wf .key, .wf .key.on { background: #ffffff !important; border: 1.5px solid #8a8a8a !important; color: #333333 !important; font-size: 9px !important; font-weight: 700; }
+.wf .key.on { background: #dcdcdc !important; border-color: #333333 !important; }
+.wf .green-display, .wf .mini-display { background: #ffffff !important; border: 1.5px dashed #8a8a8a !important; color: #444444 !important; }
+.wf .green-display b, .wf .mini-display b { font-size: 13px !important; font-weight: 700; }
+.wf .green-display span, .wf .mini-display small { font-size: 10px !important; color: #777777 !important; }
+
+.wf .lcd { background: #ffffff !important; border: 2px solid #555555 !important; color: #333333 !important; }
+.wf .lcd-status { background: #ececec !important; border-bottom: 1px solid #9a9a9a !important; font-size: 10px !important; font-weight: 700; }
+.wf .search, .wf .lcd-btn { background: #ffffff !important; border: 1.5px solid #8a8a8a !important; font-size: 11px !important; color: #333333 !important; }
+.wf .lcd-btn.on { background: #dcdcdc !important; }
+.wf .search .caret { background: #333333 !important; width: 2px !important; }
+.wf .list-head { font-size: 9px !important; font-weight: 700; color: #777777 !important; border-bottom: 1px dashed #9a9a9a !important; }
+.wf .row .id, .wf .row .stat, .wf .card .id, .wf .cstats span { font-size: 12px !important; color: #555555 !important; }
+.wf .row .name, .wf .card .name, .wf .trainer-name { font-size: 13px !important; font-weight: 700; }
+.wf .cstats em { font-size: 8px !important; }
+.wf .row.sel, .wf .card.sel, .wf .trainer-row.sel { background: #dcdcdc !important; color: #222222 !important; border-color: #555555 !important; }
+.wf .row.hover { background: #f0f0f0 !important; border: 1.5px dashed #8a8a8a !important; }
+.wf .row .cursor { border-left-color: #222222 !important; }
+.wf .card { background: #ffffff !important; border: 1.5px solid #9a9a9a !important; }
+.wf .chip, .wf .type-opt { background: #ffffff !important; color: #444444 !important; border: 1px solid #8a8a8a !important; font-size: 8px !important; font-weight: 700; }
+.wf .type-opt.on { background: #dcdcdc !important; border: 2px solid #333333 !important; }
+.wf .type-opt em { font-size: 10px !important; }
+.wf .tag-ab { background: #ffffff !important; border: 1.5px solid #333333 !important; color: #333333 !important; font-size: 9px !important; }
+.wf .popover { background: #ffffff !important; border: 2px solid #555555 !important; }
+.wf .popover-title { font-size: 10px !important; font-weight: 800; }
+.wf .scrollbar { border-color: #9a9a9a !important; }
+.wf .scrollbar i { background: #9a9a9a !important; }
+.wf .avatar { background: #ffffff !important; color: #555555 !important; border: 1.5px solid #8a8a8a !important; font-size: 10px !important; }
+.wf .badges i, .wf .badges i.on { border-color: #8a8a8a !important; }
+.wf .badges i.on { background: #9a9a9a !important; }
+.wf .empty b { font-size: 13px !important; font-weight: 800; }
+.wf .empty p { font-size: 12px !important; }
+
+.wf .screen2 { background: #fafafa !important; border: 2px solid #555555 !important; color: #333333 !important; }
+.wf .screen2 * { color: #444444 !important; }
+.wf .s2-num, .wf .s2-label, .wf .stat-row .lbl, .wf .cmp-row .lbl, .wf .s2-foot, .wf .hint, .wf .art-tag, .wf .s2-star { font-size: 9px !important; font-weight: 700; }
+.wf .s2-name { font-size: 15px !important; font-weight: 800; }
+.wf .stat-row .val, .wf .cmp-row .v, .wf .top-item, .wf .facts, .wf .type-bar em, .wf .team-card .tc-name, .wf .team-card .tc-sub em, .wf .signal span { font-size: 12px !important; }
+.wf .s2-total b { font-size: 15px !important; font-weight: 800; }
+.wf .vs { font-size: 18px !important; font-weight: 800; }
+.wf .segs i { background: #e2e2e2 !important; }
+.wf .segs i.on, .wf .cmp-row .bar i, .wf .type-bar .fill { background: #9a9a9a !important; }
+.wf .art-box, .wf .team-card, .wf .s2-foot .tchip, .wf .s2-star { border-color: #9a9a9a !important; }
+.wf .art-tag i { background: #9a9a9a !important; }
+.wf .signal b { font-size: 12px !important; font-weight: 800; }
+
+.ph { display: flex; flex: none; background: #f7f7f7; }
+.ph svg { flex: none; }
+.wf-tag {
+  position: absolute; left: 16px; bottom: 16px; z-index: 9; padding: 6px 10px; border-radius: 6px;
+  background: #333333; color: #ffffff; font-size: 11px !important; font-weight: 700; letter-spacing: 0.5px;
+}
