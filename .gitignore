@@ -1,0 +1,7 @@
+node_modules
+dist
+design/out
+.claude
+*.log
+.DS_Store
+prompt-pokedex-claude-code.md
