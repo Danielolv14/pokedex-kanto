@@ -1,41 +1,10 @@
-import { useRef, useState } from 'react';
-import usePokeApi from '../hooks/usePokeApi';
-import useVisivel from '../hooks/useVisivel';
-import useMovimentoReduzido from '../hooks/useMovimentoReduzido';
-import { CORES_TIPO, tinta, up } from '../data/dados';
-import animacoes from '../data/animacoes.json';
-import semImagem from '../assets/images/sem-imagem.svg';
+import { useState } from 'react';
+import usePokeApi from '../../hooks/usePokeApi';
+import useMovimentoReduzido from '../../hooks/useMovimentoReduzido';
+import animacoes from '../../data/animacoes.json';
+import semImagem from '../../assets/images/sem-imagem.svg';
 
 const COM_VIDEO = new Set(animacoes);
-
-export function Chip({ tipo, grande }) {
-  const cor = CORES_TIPO[tipo.name];
-  return (
-    <span className={`chip${grande ? ' lg' : ''}`} style={{ background: cor, color: tinta(cor) }}>
-      {up(tipo.name)}
-    </span>
-  );
-}
-
-// Sprite da lista: só busca na PokéAPI quando aparece na tela.
-export function Sprite({ id, tamanho }) {
-  const ref = useRef(null);
-  const visivel = useVisivel(ref);
-  const { imagens, carregando } = usePokeApi(id, visivel);
-  const [quebrada, setQuebrada] = useState(null);
-  const src = imagens?.sprite;
-  const z = Math.round(tamanho * 1.5);
-  const m = Math.round((z - tamanho) / 2);
-  return (
-    <span ref={ref} className="spr" style={{ width: tamanho, height: tamanho }}>
-      {src && quebrada !== src ? (
-        <img src={src} width={z} height={z} alt="" style={{ margin: -m }} onError={() => setQuebrada(src)} />
-      ) : (
-        <img src={semImagem} width={Math.round(tamanho * 0.8)} height={Math.round(tamanho * 0.8)} alt="" className={`spr-ph${carregando ? ' carregando' : ''}`} />
-      )}
-    </span>
-  );
-}
 
 // Arte dos detalhes: vídeo próprio → GIF do Showdown → arte oficial → imagem reserva.
 export function ArtePokemon({ p, tamanho, animar = true, etiqueta = false }) {

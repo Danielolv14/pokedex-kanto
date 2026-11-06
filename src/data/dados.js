@@ -66,6 +66,7 @@ export const treinadoresDe = (id) => treinadores.filter((t) => t.pokemonIds.incl
 export const pad3 = (n) => String(n).padStart(3, '0');
 export const up = (s) => s.toUpperCase();
 export const milhar = (n) => n.toLocaleString('pt-BR');
+export const plural = (n, um, varios) => `${n} ${n === 1 ? um : varios}`;
 
 const lum = (hex) => {
   const c = [1, 3, 5]

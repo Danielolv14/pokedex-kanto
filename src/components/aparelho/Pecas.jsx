@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Icone from './Icone';
+import Icone from '../comum/Icone';
 import { useIdSvg } from './Carcaca';
 
 const caixa = (x, y, w, h) => ({ left: x, top: y, width: w, height: h });
